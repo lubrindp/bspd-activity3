@@ -9,10 +9,10 @@ def client():
 
 def test_greetme(client):
     response = client.get('/')
-    assert response.data==b'hello devops'
+    assert response.data==b'Welcome to flask home JR!'
     assert response.status_code==200
 
 def test_page(client):
     response = client.get('/page1')
-    assert response.data==b'welcome to page1'
+    assert response.data==b'Welcome to flask page1 JR!'
     assert response.status_code==200
