@@ -39,4 +39,4 @@ jobs:
 
         - name: build docker image
           run: |
-            docker build -t lubrindp/flask-app:latest
+            docker build -t lubrindp/flask-app:latest .
